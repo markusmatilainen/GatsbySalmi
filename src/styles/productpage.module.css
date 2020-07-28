@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: rgb(228, 126, 103);
+    color: white;
+}
+
+.section1 h1 {
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.section1 p {
+    font-size: 12px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.section2 p {
+    color: grey;
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.text2 {
+    width: 95%;
+    line-height: 32px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productpagebox {
+    background-color: #e6e6e6;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 0;
+    margin-top: 20px;
+    width: 22%;
+    height: 320px;
+    transition-duration: 0.3s;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productpagebox:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+.productpagebox:hover > button {
+    background-color: pink;
+}
+
+.productpagebox h2 {
+    float: right;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.productpagebox p {
+    line-height: 32px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.link:hover {
+    color: black;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+}
+
+.section3 img {
+    margin: 0 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-size: 15px;
+    color: black;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    border: none;
+}
+
+textarea {
+    margin-bottom: 30px;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.rndbtn {
+    background-color: #ff6666;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 120px;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+.rndbtn:hover {
+    background-color: #ffc34d;
+    cursor: pointer;
+}
+
+.boxbtn {
+    background-color: #ff6666;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.boxbtn:hover {
+    background-color: #ffc34d;
+    cursor: pointer;
+}
+
+.topbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    height: 35px;
+    width: 48px;
+    bottom: 0;
+    right: 75px;
+
+    text-decoration: none;
+    background-color: rgb(77, 77, 77);
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.topbtn:hover {
+    background-color: rgb(44, 82, 135);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .section1 p {
+        display: none;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .text2 {
+        width: 80%;
+    }
+
+    .section3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 img {
+        height: 500px;
+        width: 600px;
+    }
+
+    .productpagebox {
+        width: 80%;
+    }
+
+    textarea {
+        width: 85%;
+    }
+    
+}

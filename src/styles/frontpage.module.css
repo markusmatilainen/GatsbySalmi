@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    background-image: url("/salmi-header.jpg");
+    height: 429px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    /*font-size: 50px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 h2 {
+    font-weight: normal;
+    font-size: 5vw;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section2 img {
+    width: 30%;
+    height: 30%;
+}
+
+.section2 h2 {
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.1;
+    width: 20%;
+}
+
+.section2 p {
+    color: #808080;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.content2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    margin: 20px 0;
+}
+
+.second {
+    margin-bottom: 40px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.section3 p {
+    color: grey;
+    font-size: 20px;
+}
+
+.section3 h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.frontpagebox {
+    background-color: #e6e6e6;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 50px;
+    width: 28%;
+    height: 380px;
+    transition-duration: 0.3s;
+}
+
+.frontpagebox:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+
+.frontpagebox:hover > button {
+    background-color: pink;
+}
+
+.frontpagebox h2 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.frontpagebox p {
+    width: 80%;
+    line-height: 32px;
+}
+
+.section4 {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.section4 h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+
+.stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stories img {
+    margin-bottom: 25px;
+}
+
+.storycontent {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    width: 70%;
+    line-height: 34px;
+}
+
+.signature {
+    margin-top: 100px;
+}
+
+.story1, .story2, .story3, .story4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.role {
+    font-size: 15px;
+    color: grey;
+}
+
+.puijo {
+    height: 130px;
+    width: 130px;
+}
+
+.section5 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, #ff9966 30%, #660066 100%);
+}
+
+.section5 h2 {
+    color: white;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    width: 50%;
+}
+
+.section5 h4 {
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.rndbtn {
+    background-color: #ff6666;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 150px;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+.rndbtn:hover {
+    background-color: #ffc34d;
+    cursor: pointer;
+}
+
+.boxbtn {
+    background-color: #ff6666;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    padding: 11px;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.boxbtn:hover {
+    background-color: #ffc34d;
+    cursor: pointer;
+}
+
+.topbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    height: 35px;
+    width: 48px;
+    bottom: 0;
+    right: 75px;
+
+    text-decoration: none;
+    background-color: rgb(77, 77, 77);
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.topbtn:hover {
+    background-color: rgb(44, 82, 135);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section2 img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container3 {
+        flex-direction: column;
+    }
+
+    .frontpagebox {
+        width: 80%;
+    }
+
+    .stories {
+        flex-direction: column;
+    }
+    
+}
