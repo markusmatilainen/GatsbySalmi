@@ -14,12 +14,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "gatsby": "^2.22.15",
-    "gatsby-cli": "^2.12.55",
+    "gatsby": "^2.24.33",
+    "gatsby-cli": "^2.12.77",
+    "gatsby-plugin-sharp": "^2.6.25",
+    "gatsby-source-wordpress": "^3.3.27",
+    "gatsby-source-wordpress-experimental": "^1.2.6",
+    "gatsby-transformer-sharp": "^2.5.12",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.2.0"
