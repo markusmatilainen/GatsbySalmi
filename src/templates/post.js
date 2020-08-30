@@ -1,32 +1,37 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
-class Post extends Component {
-  render() {
-    const post = this.props.data.wordpressPost
+class PostTemplate extends Component {
+    render() {
+        const currentPost = this.props.data.wordpressPost
 
-    return (
-      <>
-        <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </>
-    )
-  }
+        console.log(currentPost)
+
+        return (
+            <div>
+                <h1 dangerouslySetInnerHTML={{ __html: currentPost.title }} />
+                <div dangerouslySetInnerHTML={{ __html: currentPost.content }} />
+            </div>
+        )
+    }
 }
 
-Post.propTypes = {
-  data: PropTypes.object.isRequired,
-  edges: PropTypes.array,
-}
 
-export default Post
+export default PostTemplate
 
 export const pageQuery = graphql`
-  query($id: String!) {
-    wordpressPost(id: { eq: $id }) {
-      title
-      content
+    query currentPostQuery($id: String!) {
+        wordpressPost(id: { eq: $id }) {
+            title
+            content
+        }
+        site {
+            siteMetadata {
+                title
+                subtitle
+            }
+        }
     }
-  }
 `
