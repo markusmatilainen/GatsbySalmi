@@ -5,9 +5,9 @@ module.exports = {
   },
   plugins: [
       'gatsby-plugin-react-helmet',
-      `gatsby-plugin-netlify-cms`,
-      'gatsby-transformer-sharp',
-      {
+      'gatsby-plugin-netlify-cms',
+      'gatsby-transformer-sharp'
+      /**{
           resolve: "gatsby-source-wordpress",
           options: {
               baseUrl: "localhost/new_wp",
@@ -21,7 +21,7 @@ module.exports = {
                 htaccess_sendImmediately: false
               }
           }
-      }
+      }**/
   ],
 };
 
