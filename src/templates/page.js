@@ -5,6 +5,7 @@ class PageTemplate extends Component {
     render() {
         const siteMetadata = this.props.data.site.siteMetadata
         const currentPage = this.props.data.wordpressPage
+        //const currentPage = this.props.data.page
 
         console.log(currentPage)
 
@@ -19,6 +20,26 @@ class PageTemplate extends Component {
 }
 
 export default PageTemplate
+
+/**
+export const pageQuery = graphql`
+    query currentPageQuery($id: String!) {
+        page(id: { eq: $id }) {
+            title
+            content
+            date
+        }
+        site {
+            id
+            siteMetadata {
+                title
+                subtitle
+            }
+        }
+    }
+`
+**/
+
 
 export const pageQuery = graphql`
     query currentPageQuery($id: String!) {

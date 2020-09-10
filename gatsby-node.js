@@ -3,7 +3,37 @@ const Promise = require(`bluebird`);
 const path = require(`path`);
 const slash = require(`slash`);
 
-const pageQuery = `
+//pages / allWordpressPage / allSitePage
+
+/**
+const pagesQuery = `
+query PagesQuery {
+    pages {
+      edges {
+        node {
+          id
+          slug
+        }
+      }
+    }
+}
+`
+
+const postsQuery = `
+query PostsQuery {
+    posts {
+      edges {
+          node {
+            id
+            slug
+          }
+        }
+    }
+  }
+  `
+**/
+
+const pagesQuery = `
 query PagesQuery {
     allWordpressPage {
       edges {
@@ -13,7 +43,7 @@ query PagesQuery {
         }
       }
     }
-}  
+}
 `
 
 const postsQuery = `
@@ -29,7 +59,6 @@ query PostsQuery {
 }
 `
 
-
 exports.createPages = ({ graphql, boundActionCreators }) => {
     const { createPage } = boundActionCreators;
 
@@ -37,7 +66,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     return new Promise((resolve, reject) => {
 
         // Pages
-        graphql(pageQuery)
+        graphql(pagesQuery)
             .then(result => {
                 if (result.errors) {
                     console.log(result.errors);
@@ -46,6 +75,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
                 const pageTemplate = path.resolve("./src/templates/page.js");
 
+                //allWordpressPage tai pages tai allSitePage
                 _.each(result.data.allWordpressPage.edges, edge => {
                     createPage({
                         path: `/${edge.node.slug}/`,
@@ -66,6 +96,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         }
                         const postTemplate = path.resolve("./src/templates/post.js");
 
+                        //allWordpressPost tai posts tai allSitePost
                         _.each(result.data.allWordpressPost.edges, edge => {
                             createPage({
                                 path: `/post/${edge.node.slug}/`,
