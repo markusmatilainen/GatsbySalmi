@@ -10,8 +10,8 @@ module.exports = {
       {
           resolve: "gatsby-source-wordpress",
           options: {
-              baseUrl: "gatsbywp.server1.hrj.fi/graphql",
-              //baseUrl: "http://localhost/new_wp/graphql",
+              baseUrl: "gatsbywp.server1.hrj.fi",
+              //baseUrl: "http://localhost/new_wp",
               protocol: "https",
               hostingWPCOM: false,
               useACF: false,

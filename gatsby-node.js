@@ -4,6 +4,7 @@ const path = require(`path`);
 const slash = require(`slash`);
 
 //pages / allWordpressPage / allSitePage
+//posts / allWordpressPost
 
 /**
 const pagesQuery = `
