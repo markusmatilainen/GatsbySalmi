@@ -5,7 +5,7 @@ module.exports = {
   },
   plugins: [
       'gatsby-plugin-react-helmet',
-      'gatsby-plugin-netlify-cms',
+      //'gatsby-plugin-netlify-cms',
       'gatsby-transformer-sharp',
       {
           resolve: "gatsby-source-wordpress",
