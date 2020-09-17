@@ -1,3 +1,4 @@
+/**
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
@@ -23,6 +24,8 @@ class PostTemplate extends Component {
 
 export default PostTemplate
 
+**/
+
 /**
 export const pageQuery = graphql`
     query currentPostQuery($id: String!) {
@@ -40,7 +43,7 @@ export const pageQuery = graphql`
 `
 **/
 
-
+/**
 export const pageQuery = graphql`
     query currentPostQuery($id: String!) {
         wordpressPost(id: { eq: $id }) {
@@ -55,3 +58,4 @@ export const pageQuery = graphql`
         }
     }
 `
+**/

@@ -1,3 +1,4 @@
+/**
 import React, {Component} from "react"
 import { graphql } from "gatsby"
 
@@ -21,6 +22,8 @@ class PageTemplate extends Component {
 
 export default PageTemplate
 
+**/
+
 /**
 export const pageQuery = graphql`
     query currentPageQuery($id: String!) {
@@ -40,7 +43,7 @@ export const pageQuery = graphql`
 `
 **/
 
-
+/**
 export const pageQuery = graphql`
     query currentPageQuery($id: String!) {
         wordpressPage(id: { eq: $id }) {
@@ -57,3 +60,4 @@ export const pageQuery = graphql`
         }
     }
 `
+**/
