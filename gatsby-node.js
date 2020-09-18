@@ -1,9 +1,7 @@
-/**
 const _ = require(`lodash`);
 const Promise = require(`bluebird`);
 const path = require(`path`);
 const slash = require(`slash`);
-**/
 
 //pages / allWordpressPage / allSitePage
 //posts / allWordpressPost
@@ -36,7 +34,6 @@ query PostsQuery {
   `
 **/
 
-/**
 const pagesQuery = `
 query PagesQuery {
     allWordpressPage {
@@ -116,4 +113,3 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // ==== END POSTS ====
     });
 };
-**/
