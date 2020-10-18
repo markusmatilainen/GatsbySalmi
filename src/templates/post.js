@@ -1,14 +1,10 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
-import PropTypes from "prop-types"
-import Img from "gatsby-image"
 
 class PostTemplate extends Component {
     render() {
 
         const currentPost = this.props.data.wordpressPost
-        //const currentPost = this.props.data.post
-
         console.log(currentPost)
 
         return (
@@ -20,10 +16,12 @@ class PostTemplate extends Component {
     }
 }
 
-
 export default PostTemplate
 
 
+//const currentPost = this.props.data.post
+//import PropTypes from "prop-types"
+//import Img from "gatsby-image"
 /**
 export const pageQuery = graphql`
     query currentPostQuery($id: String!) {

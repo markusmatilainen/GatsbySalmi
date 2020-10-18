@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: 'Wordpress Gatsby',
-      subtitle: `Fetch Data From Local WP Install`,
+      title: 'GatsbyWP',
+      subtitle: `Fetch Data From Wordpress`,
   },
   plugins: [
       'gatsby-plugin-react-helmet',
@@ -11,20 +11,22 @@ module.exports = {
           resolve: "gatsby-source-wordpress",
           options: {
               baseUrl: "gatsbywp.server1.hrj.fi",
-              //baseUrl: "http://localhost/new_wp",
               protocol: "https",
               hostingWPCOM: false,
               useACF: false,
               verboseOutput: true,
-              auth: {
-                htaccess_user: "hra.salami",
-                htaccess_pass: "hra.salami",
-                htaccess_sendImmediately: false
-              }
           }
       }
   ],
 };
+
+
+
+/**auth: {
+  htaccess_user: "hra.salami",
+  htaccess_pass: "hra.salami",
+  htaccess_sendImmediately: false
+}**/
 
 /**
 module.exports = {
