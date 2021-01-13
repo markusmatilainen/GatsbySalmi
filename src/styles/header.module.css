@@ -132,6 +132,7 @@ label {
 }
 
 @media only screen and (max-width: 1000px) {
+  
   label {
     display: block;
     cursor: pointer;

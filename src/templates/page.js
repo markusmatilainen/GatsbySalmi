@@ -20,28 +20,6 @@ class PageTemplate extends Component {
 
 export default PageTemplate
 
-
-//const currentPage = this.props.data.page
-
-/**
-export const pageQuery = graphql`
-    query currentPageQuery($id: String!) {
-        page(id: { eq: $id }) {
-            title
-            content
-            date
-        }
-        site {
-            id
-            siteMetadata {
-                title
-                subtitle
-            }
-        }
-    }
-`
-**/
-
 export const pageQuery = graphql`
     query currentPageQuery($id: String!) {
         wordpressPage(id: { eq: $id }) {

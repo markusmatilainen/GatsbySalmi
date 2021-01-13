@@ -18,27 +18,6 @@ class PostTemplate extends Component {
 
 export default PostTemplate
 
-
-//const currentPost = this.props.data.post
-//import PropTypes from "prop-types"
-//import Img from "gatsby-image"
-/**
-export const pageQuery = graphql`
-    query currentPostQuery($id: String!) {
-        post(id: { eq: $id }) {
-            title
-            content
-        }
-        site {
-            siteMetadata {
-                title
-                subtitle
-            }
-        }
-    }
-`
-**/
-
 export const pageQuery = graphql`
     query currentPostQuery($id: String!) {
         wordpressPost(id: { eq: $id }) {
