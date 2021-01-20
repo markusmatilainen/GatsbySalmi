@@ -1,1 +1,7 @@
-Static website made with GatsbyJS framework that resembles the Salmi Platform website. The site was made for the thesis, and it was attached to WordPress and Netlify CMS content management systems to test its effect on the websites load times. The testing was done compared to the WordPress-version of the website.
+Static website that resembles the Salmi Platform website.
+Contains two pages:
+1. Home page
+2. Product page
+Made with GatsbyJS (Based on ReactJS).
+The site was made for the thesis, and was attached to WordPress and Netlify CMS content management systems to test its effect on the websites load times.
+The testing was done compared to the WordPress-version of the website.
