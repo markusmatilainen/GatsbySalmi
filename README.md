@@ -10,4 +10,8 @@ Static website that resembles the Salmi Platform website. The site was made for 
 ## Technologies
 
 * [Gatsby](https://www.gatsbyjs.com) - An open-source frontend framework based on React
+<<<<<<< HEAD
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - A language for styling web pages
+=======
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - A language for styling web pages
+>>>>>>> 8b89704bbf0d022643384bdcf5f905bfca6d75ca
